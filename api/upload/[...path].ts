@@ -1,4 +1,4 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { VercelRequest, VercelResponse } from 'vercel';
 
 // Hard safety: optionally restrict to one bucket
 const ALLOWED_BUCKET = process.env.ALLOWED_BUCKET || 'audio-uploads';
