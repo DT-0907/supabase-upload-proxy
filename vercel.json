@@ -1,0 +1,15 @@
+{
+    "functions": {
+        "api/upload/[...path].ts": {
+            "runtime": "nodejs18.x",
+            "maxDuration": 10,
+            "memory": 256
+        }
+    },
+    "routes": [
+        {
+            "src": "/storage/v1/object/(.*)",
+            "dest": "/api/upload/storage/v1/object/$1"
+        }
+    ]
+}
