@@ -1,4 +1,3 @@
-// Updated import for Vercel types
 import type { VercelRequest, VercelResponse } from 'vercel';
 
 // Hard safety: optionally restrict to one bucket
